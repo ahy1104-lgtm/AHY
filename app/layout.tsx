@@ -28,6 +28,7 @@ export default function RootLayout({
             <nav className="hidden sm:flex gap-8">
               {/* 여기에 새로운 네비게이션 링크를 추가하세요 */}
               <a href="#" className="text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors">소개</a>
+              <a href="/guestbook" className="text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors">방명록</a>
               <a href="#" className="text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors">과정안내</a>
               <a href="#" className="text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors">고객센터</a>
             </nav>
