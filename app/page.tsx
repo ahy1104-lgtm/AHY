@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function Home() {
   return (
     <div className="flex-1 w-full flex flex-col items-center justify-center p-6 sm:p-12 lg:p-24 bg-gradient-to-br from-blue-50 via-white to-purple-50">
@@ -14,10 +16,9 @@ export default function Home() {
           </p>
         </div>
 
-        {/* 가짜(Placeholder) 버튼 영역 */}
+        {/* 시작하기 버튼 (방명록으로 이동) */}
         <div className="pt-4">
-          {/* 여기에 기능을 실행할 새로운 컴포넌트를 추가하세요 */}
-          <button className="group relative inline-flex items-center justify-center px-8 py-4 font-bold text-white transition-all duration-200 bg-blue-600 rounded-full hover:bg-blue-700 hover:shadow-lg hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-600">
+          <Link href="/guestbook" className="group relative inline-flex items-center justify-center px-8 py-4 font-bold text-white transition-all duration-200 bg-blue-600 rounded-full hover:bg-blue-700 hover:shadow-lg hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-600">
             시작하기
             <svg 
               className="w-5 h-5 ml-2 -mr-1 transition-transform duration-200 group-hover:translate-x-1" 
@@ -28,7 +29,7 @@ export default function Home() {
             >
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
             </svg>
-          </button>
+          </Link>
         </div>
 
         {/* 추가적인 섹션이나 기능을 위한 안내 주석 */}
